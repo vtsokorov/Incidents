@@ -1,7 +1,5 @@
 # Incidents
 
-## При разработке использовался Python 3.14.
-
 ### Для запуска необходимо выполнить:
 - Клонировать репозиторий
 - Создать виртуальное окружение в каталоге проекта (python -m venv venv)
@@ -9,13 +7,13 @@
 - flask db upgrade
 - flask --app app run
 
-## Документация API:
+### Документация API:
 http://localhost:5000/swagger/
 
-## Состояние API:
+### Состояние API:
 http://localhost:5000/health
 
-## Методы API:
+### Методы API:
 [POST] /api/v1/incident - Создать новый инцидент <br>
 Пример: curl -X POST "http://localhost:5000/api/v1/incident" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"description\":\"Новая проблема\", \"source\":\"operator\"}"
 
@@ -27,3 +25,5 @@ http://localhost:5000/health
 
 [GET] /api/v1/incidents - Получить список инцидентов <br>
 Пример: curl -X GET "http://localhost:5000/api/v1/incidents?page=1&length=10&status=reported" -H  "accept: application/json"
+
+При разработке использовался Python 3.14.
