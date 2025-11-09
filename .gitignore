@@ -1,0 +1,13 @@
+*.pyc
+*.pyo
+*.sqlite
+*.db
+__pycache__
+.idea/
+.vscode/
+.coverage
+.settings/
+.project
+.pydevproject
+.python-version
+.dccache
