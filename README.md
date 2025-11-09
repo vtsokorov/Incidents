@@ -2,7 +2,7 @@
 
 ### Для запуска необходимо выполнить:
 - Клонировать репозиторий
-- Создать виртуальное окружение в каталоге проекта (python -m venv venv)
+- Создать виртуальное окружение (python -m venv venv)
 - pip install -r requirements.txt
 - flask db upgrade
 - flask --app app run
