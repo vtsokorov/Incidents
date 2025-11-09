@@ -7,14 +7,11 @@ load_dotenv()
 
 
 class Config:
-    SECRET_KEY = os.getenv('SECRET_KEY', 'dev-secret-key')
     DEBUG = os.getenv('DEBUG', True)
     
-    # Database
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
-    # Flasgger с компонентами
     SWAGGER = {
         'title': 'API для UCAR<>TOPDOER',
         'openapi': '3.0.3',
