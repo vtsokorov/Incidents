@@ -40,7 +40,7 @@ def health_check():
 def info():
     import platform
     return jsonify({
-        'flask_version': '2.3.3',
+        'flask_version': '3.1.2',
         'python_version': platform.python_version(),
         'environment': 'development'
     })
