@@ -15,15 +15,23 @@ http://localhost:5000/health
 
 ### Методы API:
 [POST] /api/v1/incident - Создать новый инцидент <br>
+::: tip
 Пример: curl -X POST "http://localhost:5000/api/v1/incident" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"description\":\"Новая проблема\", \"source\":\"operator\"}"
+:::
 
 [GET] /api/v1/incident/{incident_id} - Получить инцидент по ID <br>
+::: tip
 Пример: curl -X GET "http://localhost:5000/api/v1/incident/1" -H  "accept: application/json"
+:::
 
 [PATCH] /api/v1/incident/{incident_id} - Обновить статус инцидента <br>
+::: tip
 Пример: curl -X PATCH "http://localhost:5000/api/v1/incident/1" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"status\":\"closed\"}"
+:::
 
 [GET] /api/v1/incidents - Получить список инцидентов <br>
+::: tip
 Пример: curl -X GET "http://localhost:5000/api/v1/incidents?page=1&length=10&status=reported" -H  "accept: application/json"
+:::
 
-При разработке использовался Python 3.14.
+Использовался Python 3.14
