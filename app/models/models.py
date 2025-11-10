@@ -4,8 +4,6 @@ from enum import Enum
 
 
 class IncidentStatus(Enum):
-    """Перечисление статусов инцидента"""
-    
     REPORTED = "reported"
     INVESTIGATING = "investigating"
     IDENTIFIED = "identified" 
@@ -16,8 +14,6 @@ class IncidentStatus(Enum):
 
 
 class IncidentSource(Enum):
-    """Перечисление источников инцидента"""
-    
     OPERATOR = "operator"
     MONITORING = "monitoring"
     PARTNER = "partner"
