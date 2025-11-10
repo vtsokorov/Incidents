@@ -1,7 +1,4 @@
-# Incidents
-
 ### Для запуска необходимо выполнить:
-- Клонировать репозиторий
 - Создать виртуальное окружение (python -m venv venv)
 - pip install -r requirements.txt
 - flask db upgrade
@@ -37,5 +34,3 @@ curl -X PATCH "http://localhost:5000/api/v1/incident/1" -H  "accept: application
 <summary>Пример:</summary>
 curl -X GET "http://localhost:5000/api/v1/incidents?page=1&length=10&status=reported" -H  "accept: application/json"
 </details>
-
-Использовался Python 3.14
